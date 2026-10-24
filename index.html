@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALOJA WIFI</title>
+<style>
+body {
+  background: linear-gradient(to bottom, #ffb380, #ff8a50);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 0;
+}
+.box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 380px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+h1 {
+  color: #ff6600;
+  margin-top: 0;
+}
+.tagline {
+  color: #666;
+  margin-bottom: 25px;
+}
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background: #e65c00;
+}
+.note {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+  <h1>🔥 ALOJA WIFI</h1>
+  <p class="tagline">Welcome! Enter your code below</p>
+
+  <input type="text" id="codeBox" placeholder="Enter voucher code here">
+  <button onclick="checkCode()">CONNECT</button>
+
+  <div class="note">
+    <strong>PRICES:</strong><br>
+    🟢 1 Hour = ₱5 &nbsp;|&nbsp; 🟡 3 Hours = ₱10<br>
+    🔵 1 Day = ₱20<br><br>
+    <strong>EXAMPLE CODES:</strong><br>
+    aloja1hr = 1 Hour<br>
+    aloja3hr = 3 Hours<br>
+    aloja1day = 1 Day<br><br>
+    <em>Connect to WiFi first, then enter code above!</em>
+  </div>
+</div>
+
+<script>
+function checkCode() {
+  var code = document.getElementById("codeBox").value.toLowerCase();
+  if (code === "aloja1hr") {
+    alert("✅ Welcome! 1 Hour Access!\n\nWiFi Password: Hp280g4mt\nPlease connect in your WiFi settings!");
+  }
+  else if (code === "aloja3hr") {
+    alert("✅ Welcome! 3 Hours Access!\n\nWiFi Password: Hp280g4mt\nPlease connect in your WiFi settings!");
+  }
+  else if (code === "aloja1day") {
+    alert("✅ Welcome! 1 Day Access!\n\nWiFi Password: Hp280g4mt\nPlease connect in your WiFi settings!");
+  }
+  else {
+    alert("❌ Wrong code! Try again or ask seller.");
+  }
+}
+</script>
+
+</body>
+  </html>
